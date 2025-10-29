@@ -14,7 +14,7 @@ function search(){
     .then(response => response.json())
     .then(data => {
         // console.log(data)
-        const meanings = data[0].meanings[0].definitions;
+        const meanings = data[0].meanings[0].definitions[0].definition;
         meaning.innerHTML = meanings;
     })
     
