@@ -13,7 +13,9 @@ function search(){
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${input}`)
     .then(response => response.json())
     .then(data => {
-        console.log(data)
+        // console.log(data)
+        const meanings = data[0].meanings[0].definitions;
+        console.log(meanings)
     })
     
 }
