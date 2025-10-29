@@ -15,7 +15,7 @@ function search(){
     .then(data => {
         // console.log(data)
         const meanings = data[0].meanings[0].definitions;
-        console.log(meanings)
+        meaning.innerHTML = meanings;
     })
     
 }
